@@ -1,0 +1,32 @@
+
+# Data loader
+dataset:
+  dataset_name: 'MNISTSuperpixels'
+  path: '/home/lcerrone/PycharmProjects/deep-graph-gym/data/MNISTSuperpixels/'
+  transform: 'NormalizeFeatures'
+
+data_loader:
+  loader_type: 'create_split'
+  batch_size: 1
+  random_seed: 0
+  split_ratios: [0.8, 0.1, 0.1]
+
+model:
+  model_name: 'GCN'
+  num_input_features: 1
+  num_filters: 16
+  num_output_features: 10
+
+trainer:
+  trainer_name: 'Simple'
+  val_frequency: 1000
+  
+  number_epoch: 200
+
+  optimizer:
+    optimizer_name: 'Adam'
+    lr: 0.01
+    weight_decay: 1e-5
+
+  loss:
+    loss_name: 'nll'

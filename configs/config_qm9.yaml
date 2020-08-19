@@ -1,0 +1,31 @@
+
+# Data loader
+dataset:
+  dataset_name: 'QM9'
+  path: '/home/lcerrone/PycharmProjects/deep-graph-gym/data/QM9/'
+  transform: 'NormalizeFeatures'
+
+data_loader:
+  loader_type: 'create_split'
+  batch_size: 2
+  random_seed: 0
+  split_ratios: [0.8, 0.1, 0.1]
+
+model:
+  model_name: 'GCN'
+  num_input_features: 11
+  num_filters: 16
+  num_output_features: 19
+
+trainer:
+  trainer_name: 'Simple'
+  val_frequency: 1
+  number_epoch: 200
+
+  optimizer:
+    optimizer_name: 'Adam'
+    lr: 0.01
+    weight_decay: 1e-5
+
+  loss:
+    loss_name: 'l2'
