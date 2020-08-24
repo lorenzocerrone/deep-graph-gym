@@ -1,0 +1,29 @@
+
+# Data loader
+dataset:
+  dataset_name: 'Cora'
+  path: '/home/lcerrone/PycharmProjects/deep-graph-gym/data/Cora/'
+  transform: 'NormalizeFeatures'
+
+data_loader:
+  loader_type: 'masked_data'
+
+model:
+  model_name: 'GraphUNet'
+  num_input_features: 1433
+  num_filters: 32
+  num_output_features: 7
+  num_nodes: 2708
+
+trainer:
+  trainer_name: 'SimpleMask'
+  val_frequency: 1
+  number_epoch: 200
+
+  optimizer:
+    optimizer_name: 'Adam'
+    lr: 0.01
+    weight_decay: 1e-5
+
+  loss:
+    loss_name: 'nll'
