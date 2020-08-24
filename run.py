@@ -19,6 +19,4 @@ if __name__ == '__main__':
 
     config = load_config(args.config)
     main_run(config)
-
-
-    print('ok')
+    print('main finished with exit 0')
