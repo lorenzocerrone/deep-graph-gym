@@ -1,19 +1,18 @@
 
 # Data loader
 dataset:
-  dataset_name: 'Pubmed'
-  path: './data/Pubmed/'
+  dataset_name: 'Cora'
+  path: './data/Cora/'
   transform: 'NormalizeFeatures'
 
 data_loader:
   loader_type: 'masked_data'
 
 model:
-  model_name: 'GraphUNet'
-  num_input_features: 500
-  num_filters: 32
-  num_output_features: 3
-  num_nodes: 19717
+  model_name: 'GCN4deepWalk'
+  num_input_features: 1433
+  num_filters: 16
+  num_output_features: 7
 
 trainer:
   trainer_name: 'SimpleMask'

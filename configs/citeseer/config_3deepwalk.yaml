@@ -2,7 +2,7 @@
 # Data loader
 dataset:
   dataset_name: 'Citeseer'
-  path: '/home/lcerrone/PycharmProjects/deep-graph-gym/data/Citeseer/'
+  path: './data/Citeseer/'
   transform: 'NormalizeFeatures'
 
 data_loader:

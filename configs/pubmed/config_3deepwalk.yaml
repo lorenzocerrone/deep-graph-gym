@@ -2,7 +2,7 @@
 # Data loader
 dataset:
   dataset_name: 'Pubmed'
-  path: '/home/lcerrone/PycharmProjects/deep-graph-gym/data/Pubmed/'
+  path: './data/Pubmed/'
   transform: 'NormalizeFeatures'
 
 data_loader:

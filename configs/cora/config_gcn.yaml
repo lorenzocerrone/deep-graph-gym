@@ -2,7 +2,7 @@
 # Data loader
 dataset:
   dataset_name: 'Cora'
-  path: '/home/lcerrone/PycharmProjects/deep-graph-gym/data/Cora/'
+  path: './data/Cora/'
   transform: 'NormalizeFeatures'
 
 data_loader:
