@@ -1,6 +1,6 @@
-from deepgraphgym import dataset_key, loader_key
-from deepgraphgym.dataloaders.datasets import dataset_collection
-from deepgraphgym.dataloaders.dataloader import Dataset2DataLoader
+from experiments import dataset_key, loader_key
+from experiments.dataloaders.datasets import dataset_collection
+from experiments.dataloaders.dataloader import Dataset2DataLoader
 
 
 def load_dataset(config):

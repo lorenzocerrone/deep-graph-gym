@@ -1,5 +1,5 @@
-from deepgraphgym import trainer_key
-from deepgraphgym.trainer.trainer import trainer_collection
+from experiments import trainer_key
+from experiments.trainer.trainer import trainer_collection
 
 
 def load_trainer(config):

@@ -2,8 +2,8 @@ from abc import ABC
 
 import torch
 
-from deepgraphgym.trainer.loss import load_loss
-from deepgraphgym.trainer.optimizer import load_optimizer
+from experiments.trainer.loss import load_loss
+from experiments.trainer.optimizer import load_optimizer
 
 
 class GenericTrainer:

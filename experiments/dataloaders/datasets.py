@@ -1,5 +1,5 @@
 from torch_geometric.datasets import Planetoid, QM9, MNISTSuperpixels
-from deepgraphgym.dataloaders.transformers import transforms_collection
+from experiments.dataloaders.transformers import transforms_collection
 
 
 def cora(config):

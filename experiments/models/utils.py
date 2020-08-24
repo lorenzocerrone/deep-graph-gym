@@ -1,5 +1,5 @@
-from deepgraphgym import model_key
-from deepgraphgym.models.models import models_collection
+from experiments import model_key
+from experiments.models.models import models_collection
 
 
 def load_model(config):

@@ -2,7 +2,7 @@ import argparse
 
 import yaml
 
-from deepgraphgym.run_experiment import main_run
+from experiments.run_experiment import main_run
 
 
 def load_config(_path):

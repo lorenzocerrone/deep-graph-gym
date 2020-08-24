@@ -2,9 +2,9 @@ import argparse
 
 import yaml
 
-from deepgraphgym.dataloaders.utils import load_dataset, load_data_loader
-from deepgraphgym.models.utils import load_model
-from deepgraphgym.trainer.utils import load_trainer
+from experiments.dataloaders.utils import load_dataset, load_data_loader
+from experiments.models.utils import load_model
+from experiments.trainer.utils import load_trainer
 
 
 def arg_parser():
