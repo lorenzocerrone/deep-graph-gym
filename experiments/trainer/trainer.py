@@ -68,8 +68,8 @@ class SimpleMask(GenericTrainer):
 
         train_l = output_train.max(1)[1].eq(data.y[data.train_mask]).sum().item() / data.train_mask.sum().item()
         val_l = output.max(1)[1].eq(data.y[data.val_mask]).sum().item() / data.val_mask.sum().item()
-        print(f"Train at epoch {epoch}, it {it}, avg-loss {train_l:0.2f}")
-        print(f"Val at epoch {epoch}, it {it}, avg-loss {val_l:0.2f}")
+        print(f"Train at epoch {epoch}, it {it}, avg-loss {train_l:0.3f}")
+        print(f"Val at epoch {epoch}, it {it}, avg-loss {val_l:0.3f}")
 
 
 class Simple(GenericTrainer, ABC):

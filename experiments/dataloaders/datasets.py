@@ -2,12 +2,24 @@ from torch_geometric.datasets import Planetoid, QM9, MNISTSuperpixels
 from experiments.dataloaders.transformers import transforms_collection
 
 
-def cora(config):
+def _planetoid(config):
     transform = transforms_collection[config['transform']]
     dataset = Planetoid(config['path'],
                         config['dataset_name'],
                         transform=transform())
     return dataset
+
+
+def cora(config):
+    return _planetoid(config)
+
+
+def citeseer(config):
+    return _planetoid(config)
+
+
+def pubmed(config):
+    return _planetoid(config)
 
 
 def qm9(config):
@@ -22,4 +34,8 @@ def mnist_superpixels(config):
     return dataset
 
 
-dataset_collection = {'Cora': cora, 'QM9': qm9, 'MNISTSuperpixels': mnist_superpixels}
+dataset_collection = {'Cora': cora,
+                      'Citeseer': citeseer,
+                      'Pubmed': pubmed,
+                      'QM9': qm9,
+                      'MNISTSuperpixels': mnist_superpixels}

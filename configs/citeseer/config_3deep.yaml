@@ -1,0 +1,28 @@
+
+# Data loader
+dataset:
+  dataset_name: 'Citeseer'
+  path: '/home/lcerrone/PycharmProjects/deep-graph-gym/data/Citeseer/'
+  transform: 'NormalizeFeatures'
+
+data_loader:
+  loader_type: 'masked_data'
+
+model:
+  model_name: 'GCN4deep'
+  num_input_features: 3703
+  num_filters: 16
+  num_output_features: 6
+
+trainer:
+  trainer_name: 'SimpleMask'
+  val_frequency: 1
+  number_epoch: 200
+
+  optimizer:
+    optimizer_name: 'Adam'
+    lr: 0.01
+    weight_decay: 1e-5
+
+  loss:
+    loss_name: 'nll'

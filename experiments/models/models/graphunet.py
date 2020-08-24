@@ -3,6 +3,7 @@ from torch_geometric.utils import dropout_adj
 import torch
 import torch.nn.functional as F
 
+
 class GraphUNet(torch.nn.Module):
     def __init__(self, config):
         super(GraphUNet, self).__init__()
